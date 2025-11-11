@@ -1,0 +1,19 @@
+[package]
+name = "cli-macros"
+version = "0.1.0"
+license.workspace = true
+edition.workspace = true
+
+[lib]
+proc-macro = true
+
+[dependencies]
+convert_case = "0.9.0"
+darling = "0.21.3"
+proc-macro2 = "1.0.103"
+quote = "1.0.42"
+syn = {version = "2.0.110", features =[ "full"]}
+
+[dev-dependencies]
+trybuild = {version = "1.0.114", features = ["diff"]}
+macrotest = "1.1.0"

@@ -1,0 +1,146 @@
+DeriveInput {
+    attrs: [],
+    vis: Visibility::Inherited,
+    ident: Ident {
+        ident: "BaseCommand",
+        span: #0 bytes(67..78),
+    },
+    generics: Generics {
+        lt_token: None,
+        params: [],
+        gt_token: None,
+        where_clause: None,
+    },
+    data: Data::Enum {
+        enum_token: Enum,
+        brace_token: Brace,
+        variants: [
+            Variant {
+                attrs: [],
+                ident: Ident {
+                    ident: "Status",
+                    span: #0 bytes(85..91),
+                },
+                fields: Fields::Unit,
+                discriminant: None,
+            },
+            Comma,
+            Variant {
+                attrs: [],
+                ident: Ident {
+                    ident: "Led",
+                    span: #0 bytes(97..100),
+                },
+                fields: Fields::Named {
+                    brace_token: Brace,
+                    named: [
+                        Field {
+                            attrs: [],
+                            vis: Visibility::Inherited,
+                            mutability: FieldMutability::None,
+                            ident: Some(
+                                Ident {
+                                    ident: "pin",
+                                    span: #0 bytes(103..106),
+                                },
+                            ),
+                            colon_token: Some(
+                                Colon,
+                            ),
+                            ty: Type::Path {
+                                qself: None,
+                                path: Path {
+                                    leading_colon: None,
+                                    segments: [
+                                        PathSegment {
+                                            ident: Ident {
+                                                ident: "u8",
+                                                span: #0 bytes(108..110),
+                                            },
+                                            arguments: PathArguments::None,
+                                        },
+                                    ],
+                                },
+                            },
+                        },
+                    ],
+                },
+                discriminant: None,
+            },
+            Comma,
+            Variant {
+                attrs: [],
+                ident: Ident {
+                    ident: "Adc",
+                    span: #0 bytes(118..121),
+                },
+                fields: Fields::Named {
+                    brace_token: Brace,
+                    named: [
+                        Field {
+                            attrs: [],
+                            vis: Visibility::Inherited,
+                            mutability: FieldMutability::None,
+                            ident: Some(
+                                Ident {
+                                    ident: "ping",
+                                    span: #0 bytes(124..128),
+                                },
+                            ),
+                            colon_token: Some(
+                                Colon,
+                            ),
+                            ty: Type::Path {
+                                qself: None,
+                                path: Path {
+                                    leading_colon: None,
+                                    segments: [
+                                        PathSegment {
+                                            ident: Ident {
+                                                ident: "u8",
+                                                span: #0 bytes(130..132),
+                                            },
+                                            arguments: PathArguments::None,
+                                        },
+                                    ],
+                                },
+                            },
+                        },
+                        Comma,
+                        Field {
+                            attrs: [],
+                            vis: Visibility::Inherited,
+                            mutability: FieldMutability::None,
+                            ident: Some(
+                                Ident {
+                                    ident: "time",
+                                    span: #0 bytes(134..138),
+                                },
+                            ),
+                            colon_token: Some(
+                                Colon,
+                            ),
+                            ty: Type::Path {
+                                qself: None,
+                                path: Path {
+                                    leading_colon: None,
+                                    segments: [
+                                        PathSegment {
+                                            ident: Ident {
+                                                ident: "u8",
+                                                span: #0 bytes(140..142),
+                                            },
+                                            arguments: PathArguments::None,
+                                        },
+                                    ],
+                                },
+                            },
+                        },
+                    ],
+                },
+                discriminant: None,
+            },
+            Comma,
+        ],
+    },
+}

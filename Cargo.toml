@@ -1,6 +1,8 @@
 [workspace]
 resolver = "2"
 members = [
+  "cli",
+  "cli-macros",
   "embedded-cli",
   "embedded-cli-macros",
   "examples/*",

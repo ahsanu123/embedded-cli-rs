@@ -1,0 +1,27 @@
+# binary build
+bb fileName: 
+  cargo build --bin {{fileName}}
+
+# binary run
+br fileName:
+  cargo run --bin {{fileName}}
+
+# binary list 
+bl: 
+  cargo build --bin
+
+# test list 
+tl: 
+  cargo test --  --list
+
+# test run
+tr testName: 
+  cargo test {{testName}} -- --nocapture
+
+# expand binary
+eb binName: 
+  cargo expand --bin {{binName}} > expanded_{{binName}}.rs
+
+# test macro
+tm: 
+  just tr test_macro
